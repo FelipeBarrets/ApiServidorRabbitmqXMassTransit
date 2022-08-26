@@ -2,8 +2,10 @@
 {
     public class Dados
     {
-        public  string? Username { get; set; }
-        public  DateTime Booked { get; set; }
-        public  string? Location{ get; set; }
+        //public  string? Username { get; set; }
+        //public  DateTime Booked { get; set; }
+        //public  string? Location{ get; set; }
+
+        public object dados { get; set; }
     }
 }

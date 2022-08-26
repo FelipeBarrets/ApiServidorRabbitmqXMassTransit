@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DIbkRgmbWEX/Px7W6Vklv85FuHOW4HLVPCa0AsmC7QqnqP7Kjn878Cxz2Wbu2HH9XldwbPd1oWVGu1zgjIhqiQ==",
+  "dgSpecHash": "Ek5TTBKj1JyH2BuLD3MEs0bRZspDCF8aumUzPpXgVER2bMET5tSArRpviEESQjOPaX9CwRyxNgYBNsSCviClxQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\felipesouza\\Documents\\Projetos\\ApiServidorRabbitmqXMassTransit\\ApiServidorRabbitmqXMassTransit.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,7 @@
     "C:\\Users\\felipesouza\\.nuget\\packages\\microsoft.extensions.options\\3.1.18\\microsoft.extensions.options.3.1.18.nupkg.sha512",
     "C:\\Users\\felipesouza\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.18\\microsoft.extensions.primitives.3.1.18.nupkg.sha512",
     "C:\\Users\\felipesouza\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.15.1\\microsoft.visualstudio.azure.containers.tools.targets.1.15.1.nupkg.sha512",
+    "C:\\Users\\felipesouza\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\felipesouza\\.nuget\\packages\\rabbitmq.client\\6.4.0\\rabbitmq.client.6.4.0.nupkg.sha512",
     "C:\\Users\\felipesouza\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\felipesouza\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",

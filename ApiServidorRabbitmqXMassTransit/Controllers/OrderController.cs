@@ -1,6 +1,8 @@
 ﻿using ApiServidorRabbitmqXMassTransit.Models;
 using MassTransit;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using System.Text.Json.Nodes;
 
 namespace ApiServidorRabbitmqXMassTransit.Controllers
 {
@@ -9,28 +11,25 @@ namespace ApiServidorRabbitmqXMassTransit.Controllers
     public class OrderController : Controller
     {
         private readonly IBus _bus;
-        public OrderController (IBus bus) { _bus = bus; }
+        public OrderController (IBus bus) { _bus = bus; }   
+
 
         [HttpPost]
-        public async Task<IActionResult> createObj(Dados dados)
+        public async Task<IActionResult> createObj([FromBody] JsonObject dados)
         {
-            if (dados != null) {
-                try {
-                    dados.Username = "teste";
-                    dados.Location = "teste";
-                    dados.Booked = Convert.ToDateTime("2022-08-23");
-                    Uri uri = new Uri("rabbitmq://localhost/orderDados");
+            if (dados != null)
+            {
+                try
+                {
+                    Uri uri = new Uri("rabbitmq://localhost/orderDados?bind=true");
                     var endPoint = await _bus.GetSendEndpoint(uri);
-                    await endPoint.Send(dados);
+                    await endPoint.Send(JsonConvert.DeserializeObject(dados.ToJsonString(), typeof(Dados)));
                     return Ok();
                 }
-                catch (Exception re) { 
-                return BadRequest();
-                }
-            
+                catch (Exception e) { BadRequest(); }
             }
             return BadRequest();
-
         }
+
     }
 }

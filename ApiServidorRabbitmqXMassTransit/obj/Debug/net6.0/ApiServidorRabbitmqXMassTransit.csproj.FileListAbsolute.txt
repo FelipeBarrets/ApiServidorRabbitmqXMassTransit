@@ -27,3 +27,4 @@ C:\Users\felipesouza\Documents\Projetos\ApiServidorRabbitmqXMassTransit\obj\Debu
 C:\Users\felipesouza\Documents\Projetos\ApiServidorRabbitmqXMassTransit\obj\Debug\net6.0\ApiServidorRabbitmqXMassTransit.pdb
 C:\Users\felipesouza\Documents\Projetos\ApiServidorRabbitmqXMassTransit\obj\Debug\net6.0\ApiServidorRabbitmqXMassTransit.genruntimeconfig.cache
 C:\Users\felipesouza\Documents\Projetos\ApiServidorRabbitmqXMassTransit\obj\Debug\net6.0\ref\ApiServidorRabbitmqXMassTransit.dll
+C:\Users\felipesouza\Documents\Projetos\ApiServidorRabbitmqXMassTransit\bin\Debug\net6.0\Newtonsoft.Json.dll
