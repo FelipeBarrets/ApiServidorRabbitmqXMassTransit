@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "AZGKbPeo8vOpa1kXjmtM9fHYWZYXsXT0KdpYBqYaaCg=",
+  "Source": "ApiServidorRabbitmqXMassTransit",
+  "BasePath": "_content/ApiServidorRabbitmqXMassTransit",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
