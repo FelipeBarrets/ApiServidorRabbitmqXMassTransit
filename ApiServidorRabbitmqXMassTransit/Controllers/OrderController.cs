@@ -15,7 +15,7 @@ namespace ApiServidorRabbitmqXMassTransit.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> createObj([FromBody] JsonObject dados)
+        public async Task<IActionResult> pagamento([FromBody] Dados dados)
         {
             if (dados != null)
             {
@@ -23,7 +23,7 @@ namespace ApiServidorRabbitmqXMassTransit.Controllers
                 {
                     Uri uri = new Uri("rabbitmq://localhost/orderDados?bind=true");
                     var endPoint = await _bus.GetSendEndpoint(uri);
-                    await endPoint.Send(JsonConvert.DeserializeObject(dados.ToJsonString(), typeof(Dados)));
+                    await endPoint.Send(dados);
                     return Ok();
                 }
                 catch (Exception e) { BadRequest(); }
